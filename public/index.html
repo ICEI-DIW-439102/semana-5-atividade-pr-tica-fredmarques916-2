@@ -1,76 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SoundHub</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 </head>
+
 <body>
-    <!-- Header -->
+
+    <!-- HEADER -->
     <header class="header">
         <div class="header__inner">
-            <a href="#" class="header__logo">
+            <a href="#inicio" class="header__logo">
                 <span class="logo-icon">
                     <svg width="15" height="15" viewBox="0 0 24 24" fill="none">
-                        <path d="M9 18V5l12-2v13" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <circle cx="6" cy="18" r="3" stroke="#fff" stroke-width="2.2"/>
-                        <circle cx="18" cy="16" r="3" stroke="#fff" stroke-width="2.2"/>
+                        <path d="M9 18V5l12-2v13" stroke="#fff" stroke-width="2.2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <circle cx="6" cy="18" r="3" stroke="#fff" stroke-width="2.2" />
+                        <circle cx="18" cy="16" r="3" stroke="#fff" stroke-width="2.2" />
                     </svg>
                 </span>
                 <span class="logo-text">SoundHub</span>
             </a>
+
             <nav class="menu">
                 <ul class="menu__list">
-                    <li><a href="#inicio"   class="menu__link menu__link--active">Início</a></li>
+                    <li><a href="#inicio" class="menu__link menu__link--active">Início</a></li>
                     <li><a href="#artistas" class="menu__link">Artistas</a></li>
-                    <li><a href="#albuns"   class="menu__link">Álbuns</a></li>
-                    <li><a href="#contato"  class="menu__link">Contato</a></li>
+                    <li><a href="#albuns" class="menu__link">Álbuns</a></li>
+                    <li><a href="#contato" class="menu__link">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
+    <!-- MAIN -->
     <main id="inicio">
-        <!-- Hero -->
+
+        <!-- HERO -->
         <section class="hero">
             <div class="hero__glow"></div>
+
             <div class="hero__inner">
                 <div class="hero__content">
                     <span class="hero__badge">
                         <span class="hero__dot"></span>
                         Catálogo musical
                     </span>
+
                     <h1 class="hero__title">
-                        Explore artistas e seus<br>
+                        Explore artistas e seus <br />
                         <span class="hero__accent">álbuns</span> em um só lugar.
                     </h1>
+
                     <p class="hero__sub">
-                        O SoundHub reúne informações de artistas e discografias em uma
-                        experiência clara, organizada e feita para você descobrir novos sons sem
-                        distrações.
+                        O SoundHub reúne informações de artistas e discografias em uma experiência clara, organizada e
+                        feita para você descobrir novos sons sem distrações.
                     </p>
+
                     <div class="hero__ctas">
-                        <a href="#artistas" class="btn btn--purple">Começar a explorar &nbsp;→</a>
-                        <a href="#" class="btn btn--ghost">
-                            <span class="play-icon">▷</span>&nbsp; Ver demo
-                        </a>
+                        <a href="#artistas" class="btn btn--purple">Começar a explorar →</a>
+                        <a href="#albuns" class="btn btn--ghost">▷ Ver demo</a>
                     </div>
                 </div>
+
                 <div class="hero__visual">
-                    <img
-                        src="https://picsum.photos/seed/stageconcert/620/460"
-                        alt="Artista no palco"
-                        class="hero__img"
-                    />
+                    <img src="https://picsum.photos/seed/stageconcert/620/460" alt="Artista no palco"
+                        class="hero__img" />
                 </div>
             </div>
         </section>
 
-        <!-- Destaques -->
+        <!-- ARTISTAS -->
         <section class="wrap-dark section artistas" id="artistas">
             <div class="container">
                 <div class="section__head">
@@ -82,6 +88,7 @@
                 </div>
 
                 <div class="cards cards--artists">
+
                     <article class="card card--artist">
                         <div class="card__photo">
                             <img src="https://picsum.photos/seed/luna42/320/340" alt="Luna Ravel" class="card__img" />
@@ -115,21 +122,11 @@
                         </div>
                     </article>
 
-                    <article class="card card--artist">
-                        <div class="card__photo">
-                            <img src="https://picsum.photos/seed/noah88/320/340" alt="Noah Cross" class="card__img" />
-                        </div>
-                        <div class="card__info">
-                            <h3 class="card__name">Noah Cross</h3>
-                            <p class="card__bio">Rock moderno com riffs marcantes e presença de palco.</p>
-                            <a href="#" class="btn btn--outline btn--sm btn--fw">Ver perfil</a>
-                        </div>
-                    </article>
                 </div>
             </div>
         </section>
 
-        <!-- Recentes -->
+        <!-- ALBUNS -->
         <section class="section albuns" id="albuns">
             <div class="container">
                 <div class="section__head">
@@ -141,9 +138,11 @@
                 </div>
 
                 <div class="cards cards--albums">
+
                     <article class="card card--album">
                         <div class="card__thumb">
-                            <img src="https://picsum.photos/seed/midnight11/460/260" alt="Midnight Echoes" class="card__img" />
+                            <img src="https://picsum.photos/seed/midnight11/460/260" alt="Midnight Echoes"
+                                class="card__img" />
                         </div>
                         <div class="card__info">
                             <h3 class="card__name">Midnight Echoes</h3>
@@ -158,7 +157,8 @@
 
                     <article class="card card--album">
                         <div class="card__thumb">
-                            <img src="https://picsum.photos/seed/papersails/460/260" alt="Paper Sails" class="card__img" />
+                            <img src="https://picsum.photos/seed/papersails/460/260" alt="Paper Sails"
+                                class="card__img" />
                         </div>
                         <div class="card__info">
                             <h3 class="card__name">Paper Sails</h3>
@@ -173,7 +173,8 @@
 
                     <article class="card card--album">
                         <div class="card__thumb">
-                            <img src="https://picsum.photos/seed/neon7788/460/260" alt="Neon Archive" class="card__img" />
+                            <img src="https://picsum.photos/seed/neon7788/460/260" alt="Neon Archive"
+                                class="card__img" />
                         </div>
                         <div class="card__info">
                             <h3 class="card__name">Neon Archive</h3>
@@ -186,54 +187,11 @@
                         </div>
                     </article>
 
-                    <article class="card card--album">
-                        <div class="card__thumb">
-                            <img src="https://picsum.photos/seed/golden2299/460/260" alt="Golden Hour" class="card__img" />
-                        </div>
-                        <div class="card__info">
-                            <h3 class="card__name">Golden Hour</h3>
-                            <p class="card__artist-name">Noah Cross</p>
-                            <div class="card__tags">
-                                <span class="tag">Rock</span>
-                                <span class="tag">Alt</span>
-                            </div>
-                            <a href="#" class="btn btn--outline btn--sm btn--fw">Ouvir álbum</a>
-                        </div>
-                    </article>
-
-                    <article class="card card--album">
-                        <div class="card__thumb">
-                            <img src="https://picsum.photos/seed/silver3344/460/260" alt="Silver Static" class="card__img" />
-                        </div>
-                        <div class="card__info">
-                            <h3 class="card__name">Silver Static</h3>
-                            <p class="card__artist-name">Luna Ravel</p>
-                            <div class="card__tags">
-                                <span class="tag">Dream Pop</span>
-                            </div>
-                            <a href="#" class="btn btn--outline btn--sm btn--fw">Ouvir álbum</a>
-                        </div>
-                    </article>
-
-                    <article class="card card--album">
-                        <div class="card__thumb">
-                            <img src="https://picsum.photos/seed/wildfire4455/460/260" alt="Wildfire Tapes" class="card__img" />
-                        </div>
-                        <div class="card__info">
-                            <h3 class="card__name">Wildfire Tapes</h3>
-                            <p class="card__artist-name">Kairo Vega</p>
-                            <div class="card__tags">
-                                <span class="tag">Acoustic</span>
-                                <span class="tag">Folk</span>
-                            </div>
-                            <a href="#" class="btn btn--outline btn--sm btn--fw">Ouvir álbum</a>
-                        </div>
-                    </article>
                 </div>
             </div>
         </section>
 
-        <!-- Formulário -->
+        <!-- CONTATO -->
         <section class="formulario" id="contato">
             <div class="container">
                 <div class="formulario__box">
@@ -241,71 +199,47 @@
                     <p class="formulario__sub">
                         Busque artistas ou receba atualizações de novos álbuns diretamente no seu e-mail.
                     </p>
-                    <div class="formulario__row">
+
+                    <form class="formulario__row">
                         <div class="formulario__field">
-                            <span class="f-ico">
-                                <svg width="13" height="13" viewBox="0 0 24 24" fill="none">
-                                    <circle cx="11" cy="11" r="8" stroke="#666" stroke-width="2"/>
-                                    <path d="M21 21l-4.35-4.35" stroke="#666" stroke-width="2" stroke-linecap="round"/>
-                                </svg>
-                            </span>
-                            <input type="text"  class="formulario__input" placeholder="Buscar artista ou álbum..." />
+                            <input type="text" class="formulario__input" placeholder="Buscar artista ou álbum..." />
                         </div>
+
                         <div class="formulario__field">
-                            <span class="f-ico">
-                                <svg width="13" height="13" viewBox="0 0 24 24" fill="none">
-                                    <rect x="2" y="4" width="20" height="16" rx="2" stroke="#666" stroke-width="2"/>
-                                    <path d="M2 8l10 6 10-6" stroke="#666" stroke-width="2"/>
-                                </svg>
-                            </span>
                             <input type="email" class="formulario__input" placeholder="seu@email.com" />
                         </div>
-                        <button type="submit" class="btn btn--purple formulario__submit">Inscrever</button>
-                    </div>
+
+                        <button type="submit" class="btn btn--purple formulario__submit">
+                            Inscrever
+                        </button>
+                    </form>
                 </div>
             </div>
         </section>
+
     </main>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
             <div class="footer__grid">
+
                 <div class="footer__brand">
-                    <a href="#" class="header__logo" style="margin-bottom:12px;display:inline-flex;">
-                        <span class="logo-icon">
-                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none">
-                                <path d="M9 18V5l12-2v13" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <circle cx="6" cy="18" r="3" stroke="#fff" stroke-width="2.2"/>
-                                <circle cx="18" cy="16" r="3" stroke="#fff" stroke-width="2.2"/>
-                            </svg>
-                        </span>
+                    <a href="#inicio" class="header__logo">
+                        <span class="logo-icon">♫</span>
                         <span class="logo-text">SoundHub</span>
                     </a>
+
                     <p class="footer__brand-text">
                         Um ponto central para descobrir artistas e suas discografias.
                     </p>
-                    <div class="footer__socials">
-                        <a href="#" class="footer__soc" aria-label="Instagram">
-                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg>
-                        </a>
-                        <a href="#" class="footer__soc" aria-label="Twitter">
-                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                        </a>
-                        <a href="#" class="footer__soc" aria-label="YouTube">
-                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none"><rect x="2" y="5" width="20" height="14" rx="3" stroke="currentColor" stroke-width="2"/><polygon points="10,9 16,12 10,15" fill="currentColor"/></svg>
-                        </a>
-                        <a href="#" class="footer__soc" aria-label="Facebook">
-                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                        </a>
-                    </div>
                 </div>
 
                 <div class="footer__col">
                     <h4 class="footer__col-h">Explorar</h4>
                     <ul class="footer__links">
-                        <li><a href="#" class="footer__link">Artistas</a></li>
-                        <li><a href="#" class="footer__link">Álbuns</a></li>
+                        <li><a href="#artistas" class="footer__link">Artistas</a></li>
+                        <li><a href="#albuns" class="footer__link">Álbuns</a></li>
                         <li><a href="#" class="footer__link">Gêneros</a></li>
                     </ul>
                 </div>
@@ -313,20 +247,12 @@
                 <div class="footer__col">
                     <h4 class="footer__col-h">Sobre</h4>
                     <ul class="footer__links">
-                        <li><a href="#" class="footer__link">O projeto</a></li>
+                        <li><a href="#" class="footer__link">Projeto</a></li>
                         <li><a href="#" class="footer__link">Equipe</a></li>
-                        <li><a href="#" class="footer__link">Contato</a></li>
+                        <li><a href="#contato" class="footer__link">Contato</a></li>
                     </ul>
                 </div>
 
-                <div class="footer__col">
-                    <h4 class="footer__col-h">Legal</h4>
-                    <ul class="footer__links">
-                        <li><a href="#" class="footer__link">Termos</a></li>
-                        <li><a href="#" class="footer__link">Privacidade</a></li>
-                        <li><a href="#" class="footer__link">Licenças</a></li>
-                    </ul>
-                </div>
             </div>
 
             <div class="footer__bottom">
@@ -334,5 +260,7 @@
             </div>
         </div>
     </footer>
+
 </body>
+
 </html>
