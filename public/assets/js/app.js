@@ -1,74 +1,72 @@
 // ESTRUTURA JSON DA APLICAÇÃO (Entidade Principal = Artistas | Entidade Secundária = Álbuns)
-const dados = {
-    "artistas": [
-        {
-            "id": 1,
-            "nome": "Luna Ravel",
-            "descricao_curta": "Pop alternativo com influências etéreas e letras introspectivas.",
-            "descricao_longa": "Luna Ravel iniciou sua carreira nos palcos independentes e rapidamente cativou o público com sua voz suave e composições profundas. Seus álbuns exploram temas de autodescoberta, sonhos e relacionamentos modernos, misturando sintetizadores com batidas pop.",
-            "genero": "Pop Alternativo / Synth",
-            "origem": "São Paulo, SP",
-            "ano_inicio": 2018,
-            "destaque": true,
-            "imagem_principal": "https://picsum.photos/seed/luna42/1200/500",
-            "imagem_thumb": "https://picsum.photos/seed/luna42/320/340",
-            "albuns": [
-                { "id": 101, "titulo": "Midnight Echoes", "ano": 2021, "imagem": "https://picsum.photos/seed/midnight11/460/260" },
-                { "id": 102, "titulo": "Starlight", "ano": 2023, "imagem": "https://picsum.photos/seed/starlight/460/260" }
-            ]
-        },
-        {
-            "id": 2,
-            "nome": "Kairo Vega",
-            "descricao_curta": "Indie folk contemporâneo com violão e harmonias acústicas.",
-            "descricao_longa": "Com raízes na música folk tradicional, Kairo Vega traz uma abordagem moderna e intimista. Suas canções são marcadas por arranjos de violão complexos e letras que falam sobre a conexão com a natureza, a nostalgia e a simplicidade da vida no interior.",
-            "genero": "Indie Folk",
-            "origem": "Curitiba, PR",
-            "ano_inicio": 2015,
-            "destaque": false,
-            "imagem_principal": "https://picsum.photos/seed/kairo7/1200/500",
-            "imagem_thumb": "https://picsum.photos/seed/kairo7/320/340",
-            "albuns": [
-                { "id": 201, "titulo": "Paper Sails", "ano": 2018, "imagem": "https://picsum.photos/seed/papersails/460/260" },
-                { "id": 202, "titulo": "Wooden Hearts", "ano": 2020, "imagem": "https://picsum.photos/seed/wooden/460/260" },
-                { "id": 203, "titulo": "Riverside", "ano": 2022, "imagem": "https://picsum.photos/seed/riverside/460/260" }
-            ]
-        },
-        {
-            "id": 3,
-            "nome": "Milo Sato",
-            "descricao_curta": "Lo-fi hip-hop com batidas suaves e atmosferas urbanas.",
-            "descricao_longa": "Produtor musical que se destaca na cena Lo-fi global. Milo Sato cria trilhas sonoras perfeitas para estudo e relaxamento. Ele utiliza samples de jazz clássico e sons ambiente de metrópoles para criar camadas ricas, nostálgicas e tranquilizantes.",
-            "genero": "Lo-fi Hip-Hop / Beats",
-            "origem": "Tóquio, Japão",
-            "ano_inicio": 2020,
-            "destaque": true,
-            "imagem_principal": "https://picsum.photos/seed/milo55/1200/500",
-            "imagem_thumb": "https://picsum.photos/seed/milo55/320/340",
-            "albuns": [
-                { "id": 301, "titulo": "Neon Archive", "ano": 2021, "imagem": "https://picsum.photos/seed/neon7788/460/260" },
-                { "id": 302, "titulo": "Rainy Days", "ano": 2022, "imagem": "https://picsum.photos/seed/rainy/460/260" },
-                { "id": 303, "titulo": "Tokyo Nights", "ano": 2023, "imagem": "https://picsum.photos/seed/tokyonight/460/260" }
-            ]
-        },
-        {
-            "id": 4,
-            "nome": "The Echoes",
-            "descricao_curta": "Rock alternativo com guitarras marcantes e vocais rasgados.",
-            "descricao_longa": "Banda de rock alternativo formada por amigos de faculdade. Eles combinam a energia crua do rock dos anos 90 com uma produção moderna e letras que abordam questões existenciais da juventude de forma enérgica e envolvente.",
-            "genero": "Rock Alternativo",
-            "origem": "Belo Horizonte, MG",
-            "ano_inicio": 2012,
-            "destaque": true,
-            "imagem_principal": "https://picsum.photos/seed/echoesband/1200/500",
-            "imagem_thumb": "https://picsum.photos/seed/echoesband/320/340",
-            "albuns": [
-                { "id": 401, "titulo": "Shattered Glass", "ano": 2016, "imagem": "https://picsum.photos/seed/shattered/460/260" },
-                { "id": 402, "titulo": "Riot", "ano": 2019, "imagem": "https://picsum.photos/seed/riot/460/260" }
-            ]
-        }
-    ]
-};
+const artistas = [
+    {
+        "id": 1,
+        "nome": "Luna Ravel",
+        "descricao_curta": "Pop alternativo com influências etéreas e letras introspectivas.",
+        "descricao_longa": "Luna Ravel iniciou sua carreira nos palcos independentes e rapidamente cativou o público com sua voz suave e composições profundas. Seus álbuns exploram temas de autodescoberta, sonhos e relacionamentos modernos, misturando sintetizadores com batidas pop.",
+        "genero": "Pop Alternativo / Synth",
+        "origem": "São Paulo, SP",
+        "ano_inicio": 2018,
+        "destaque": true,
+        "imagem_principal": "https://picsum.photos/seed/luna42/1200/500",
+        "imagem_thumb": "https://picsum.photos/seed/luna42/320/340",
+        "albuns": [
+            { "id": 101, "titulo": "Midnight Echoes", "ano": 2021, "imagem": "https://picsum.photos/seed/midnight11/460/260" },
+            { "id": 102, "titulo": "Starlight", "ano": 2023, "imagem": "https://picsum.photos/seed/starlight/460/260" }
+        ]
+    },
+    {
+        "id": 2,
+        "nome": "Kairo Vega",
+        "descricao_curta": "Indie folk contemporâneo com violão e harmonias acústicas.",
+        "descricao_longa": "Com raízes na música folk tradicional, Kairo Vega traz uma abordagem moderna e intimista. Suas canções são marcadas por arranjos de violão complexos e letras que falam sobre a conexão com a natureza, a nostalgia e a simplicidade da vida no interior.",
+        "genero": "Indie Folk",
+        "origem": "Curitiba, PR",
+        "ano_inicio": 2015,
+        "destaque": false,
+        "imagem_principal": "https://picsum.photos/seed/kairo7/1200/500",
+        "imagem_thumb": "https://picsum.photos/seed/kairo7/320/340",
+        "albuns": [
+            { "id": 201, "titulo": "Paper Sails", "ano": 2018, "imagem": "https://picsum.photos/seed/papersails/460/260" },
+            { "id": 202, "titulo": "Wooden Hearts", "ano": 2020, "imagem": "https://picsum.photos/seed/wooden/460/260" },
+            { "id": 203, "titulo": "Riverside", "ano": 2022, "imagem": "https://picsum.photos/seed/riverside/460/260" }
+        ]
+    },
+    {
+        "id": 3,
+        "nome": "Milo Sato",
+        "descricao_curta": "Lo-fi hip-hop com batidas suaves e atmosferas urbanas.",
+        "descricao_longa": "Produtor musical que se destaca na cena Lo-fi global. Milo Sato cria trilhas sonoras perfeitas para estudo e relaxamento. Ele utiliza samples de jazz clássico e sons ambiente de metrópoles para criar camadas ricas, nostálgicas e tranquilizantes.",
+        "genero": "Lo-fi Hip-Hop / Beats",
+        "origem": "Tóquio, Japão",
+        "ano_inicio": 2020,
+        "destaque": true,
+        "imagem_principal": "https://picsum.photos/seed/milo55/1200/500",
+        "imagem_thumb": "https://picsum.photos/seed/milo55/320/340",
+        "albuns": [
+            { "id": 301, "titulo": "Neon Archive", "ano": 2021, "imagem": "https://picsum.photos/seed/neon7788/460/260" },
+            { "id": 302, "titulo": "Rainy Days", "ano": 2022, "imagem": "https://picsum.photos/seed/rainy/460/260" },
+            { "id": 303, "titulo": "Tokyo Nights", "ano": 2023, "imagem": "https://picsum.photos/seed/tokyonight/460/260" }
+        ]
+    },
+    {
+        "id": 4,
+        "nome": "The Echoes",
+        "descricao_curta": "Rock alternativo com guitarras marcantes e vocais rasgados.",
+        "descricao_longa": "Banda de rock alternativo formada por amigos de faculdade. Eles combinam a energia crua do rock dos anos 90 com uma produção moderna e letras que abordam questões existenciais da juventude de forma enérgica e envolvente.",
+        "genero": "Rock Alternativo",
+        "origem": "Belo Horizonte, MG",
+        "ano_inicio": 2012,
+        "destaque": true,
+        "imagem_principal": "https://picsum.photos/seed/echoesband/1200/500",
+        "imagem_thumb": "https://picsum.photos/seed/echoesband/320/340",
+        "albuns": [
+            { "id": 401, "titulo": "Shattered Glass", "ano": 2016, "imagem": "https://picsum.photos/seed/shattered/460/260" },
+            { "id": 402, "titulo": "Riot", "ano": 2019, "imagem": "https://picsum.photos/seed/riot/460/260" }
+        ]
+    }
+];
 
 // INICIALIZAÇÃO DEPENDENDO DA PÁGINA
 document.addEventListener('DOMContentLoaded', () => {
@@ -90,7 +88,7 @@ function carregarHomePage() {
     const gridArtistas = document.getElementById('grid-todos-artistas');
 
     // 1. Filtrar destaques e renderizar Slider
-    const artistasDestaque = dados.artistas.filter(artista => artista.destaque === true);
+    const artistasDestaque = artistas.filter(artista => artista.destaque === true);
 
     artistasDestaque.forEach((artista, index) => {
         const ativoClass = index === 0 ? 'active' : '';
@@ -128,7 +126,7 @@ function carregarHomePage() {
     });
 
     // 2. Renderizar Todos os Artistas (Cards)
-    dados.artistas.forEach(artista => {
+    artistas.forEach(artista => {
         const article = document.createElement('article');
         article.className = 'card card--artist';
         article.innerHTML = `
@@ -156,7 +154,7 @@ function carregarDetalhePage() {
     const idArtista = parseInt(urlParams.get('id'));
 
     // Busca o artista correspondente no JSON
-    const artista = dados.artistas.find(a => a.id === idArtista);
+    const artista = artistas.find(a => a.id === idArtista);
 
     if (!artista) {
         container.innerHTML = `
